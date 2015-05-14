@@ -1,0 +1,11 @@
+# Site settings
+title: Compilando.org
+email: contato@scudelletti.com
+description: "Compilando.org - Tutoriais, Programação, Desenvolvimento Ágil, PHP, Java, Ruby, Python e muito mais"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://compilando.org" # the base hostname & protocol for your site
+twitter_username: dscudelletti
+github_username:  scudelletti
+
+# Build settings
+markdown: kramdown
