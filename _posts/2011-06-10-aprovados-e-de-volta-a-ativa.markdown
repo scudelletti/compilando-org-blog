@@ -21,7 +21,11 @@ tags: []
 comments: []
 ---
 E ae Galera, nossa quanto tempo não escrevo nada aqui... mas este nosso sumiço foi devido ao aclamado TCC.
+
 Todos os integrantes do compilando estavam no mesmo mar só que com barcos diferentes, fomos dois grupos de TCC distintos que alcançaram o mesmo objetivo juntos, a aprovação.
+
 Agora provavelmente voltarei a postar pra vcs e vou encher o saco do Rafa e do Solon. =D
+
 Bom é isso, após a tempestade vem a bonanza.
+
 Fui....

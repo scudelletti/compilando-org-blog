@@ -111,34 +111,47 @@ comments:
     raiz Real&#039;)"
 ---
 E ae galerinha tudo jóia?
+
 Faz um tempão que não atualizo o blog, mas no backend ando sempre brincando um pouco por aqui.
+
 Desde que aprendi a programar eu sempre tive vontade de fazer um **algoritmo** que resolvesse equações de segundo grau. Tinha começado em VB6 que foi minha primeira **linguagem de programação**, mas não me recordo se terminei ou onde foi parar aquilo.
+
 Sei que provavelmente utilizei mto a cabeça pq eu era mais newbie que o batman.
+
 Agora jah consigo brincar facinho com esses dilemas da matemática usando php, java e **python**, claro que sempre procurando as funções certas, não sou **desenvolvedor Python** ainda, mas acho um linguagem interessantíssima, junto ao Ruby.
+
 Pra quem não lembra uma **expressão de 2º grau** é parecida com esta 5x² -7x +1.
 5 representa A
 -7 representa B
 1 Representa C
+
 Bom vamos ao código.
+
 {% highlight python %}
 import math
-a = input(&quot;Insira o Valor de A &quot;)
-b = input(&quot;Insira o Valor de B &quot;)
-c = input(&quot;Insira o Valor de C &quot;)
+a = input("Insira o Valor de A ")
+b = input("Insira o Valor de B ")
+c = input("Insira o Valor de C ")
 x = []
 delta = b**2 - 4*a*c
 x.insert(1, ((-b + math.sqrt(delta))/(2*a)))
 x.insert(2, ((-b - math.sqrt(delta))/(2*a)))
-print &quot;Delta = &quot;+str(delta)+&quot;n&quot;
-if delta&gt;0:
-        print &quot;x1=&quot;+str(x[0])+&quot;&quot;
-        print &quot;x2=&quot;+str(x[1])+&quot;&quot;
+print "Delta = "+str(delta)+"n"
+if delta>0:
+        print "x1="+str(x[0])+"
+        print "x2="+str(x[1])+"
 elif delta==0:
-        print &quot;x=&quot;+str(x[0])+&quot;nx1 e x2 possuem o mesmo valor&quot;
+        print "x="+str(x[0])+"nx1 e x2 possuem o mesmo valor"
 else:
-        print &quot;Nenhuma raiz Real&quot;
+        print "Nenhuma raiz Real"
 {% endhighlight %}
+
 O código acima obtem A, B e C do usuário e retorna o Delta e os Valor de x1 e x2.
-Bom galera código extremamente simples, porém deu pra **brincar com Python**, sofri um pouquinho com a criação do vetor, que na verdade é uma lista. Achei sinistro, mas o resto foi sussa.
+
+Bom galera código extremamente simples, porém deu pra **brincar com Python**, sofri um pouquinho com a criação do vetor, que na verdade é uma lista. 
+
+Achei sinistro, mas o resto foi sussa.
+
 Agora seu sobrinho, filho  ou visinho no ensino fundamental já tem como validar suas **equações de segundo grau**,  bom pra ficar foderoso em matemática.
+
 Boa Sorte e Enjoy.

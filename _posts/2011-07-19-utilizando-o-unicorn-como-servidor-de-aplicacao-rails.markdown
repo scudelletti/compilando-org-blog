@@ -27,26 +27,38 @@ tags:
 comments: []
 ---
 Grandes mestres, vejo mtos questionamentos sobre como fazer **deploy de sistemas em Ruby on Rails**, então estou dando uma pesquisada e vi como é facil subir o Unicorn para manter sua **aplicação Rails** no ar.
-<a href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2011/07/unicorn_with_rails.png"><img src="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2011/07/unicorn_with_rails.png" alt="" title="Unicorn With Rails and Ruby" width="196" height="199" class="aligncenter size-full wp-image-285" /></a>
+
 Vocês irão ver(verão pra mim é época do ano) que é extremamente fácil subir o **Unicorn**.
+
 Vá a sua pasta de projeto rails, abra o arquivo **Gemfile** e descomente a seguinte linha:
+
 {% highlight ruby %}
 gem 'unicorn'
 {% endhighlight %}
+
 Ainda na sua raiz do projeto execute o comando abaixo para **instalar a gem** do unicorn.
+
 {% highlight bash %}
 bundle install
 {% endhighlight %}
+
 Após a instalação e atualização das Gems já podemos subir o **Unicorn como servidor de Aplicação**, neste caso subirei ele na porta 80.
+
 {% highlight bash %}
 unicorn_rails -p 80
 {% endhighlight %}
+
 Agora acesse sua aplicação via browser e voilá. **Unicorn With Rails**! ;)
+
 **Curiosidade sobre este post:**
+
 Para acessar sua aplicação pelo browser há muitas maneiras:
-<a rel="nofollow" href="http://localhost">http://localhost</a>
-<a rel="nofollow" href="http://127.0.0.1">http://127.0.0.1</a>
+<a rel="nofollow" href="http://localhost">http://localhost</a>,
+<a rel="nofollow" href="http://127.0.0.1">http://127.0.0.1</a> e
 <a rel="nofollow" href="http://0.0.0.0">http://0.0.0.0</a>
+
 **Outra curiosidade que não merece Post:**
-Se você usa ubuntu e não consegue parar os servidores com CTRL+C verifique se os atalhos do teclado do terminal não utilizam deste comando, pois o terminal verifica se antes é um atalho antes de executar.
+
+Se você usa ubuntu e não consegue parar os servidores com CTRL+C verifique se os atalhos do teclado do terminal não utilizam deste comando, pois o terminal verifica se é um atalho antes de executar.
+
 Abração Galera!!!

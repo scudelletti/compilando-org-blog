@@ -40,22 +40,30 @@ comments:
     Obrigado :)
 ---
 Neste post ensinarei a vcs como executar o **RDP do VirtualBox**.
-<a href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2011/06/Virtualbox_logo.png"><img src="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2011/06/Virtualbox_logo.png" alt="" title="Virtualbox_logo" width="512" height="512" class="aligncenter size-full wp-image-264" /></a>
+
 Após a instalação é necessario a instalação de um driver próprio do VirtualBox vamos instalar o dkms e instalar este driver.
+
 {% highlight bash %}
 sudo apt-get install dkms
 {% endhighlight %}
-Agora vamos instalar o <a href="http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html#extpack">Extension Pack</a> do VirtualBox que garante o acesso via RDP. Baixem ele <a href="http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html#extpack">aqui</a>. Executem o comando abaixo para instalar o Extension Pack.
+
+Agora vamos instalar o [Extension Pack](http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html#extpack) do VirtualBox que garante o acesso via RDP. Baixem ele [aqui](http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html#extpack). Executem o comando abaixo para instalar o Extension Pack.
+
 {% highlight bash %}
 vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-4.0.8-71778.vbox-extpack
 {% endhighlight %}
+
 Agora vamos instalar o driver propriamente dito.
 {% highlight bash %}
 sudo /etc/init.d/vboxdrv setup
 {% endhighlight %}
+
 Agora vamos subir a VM já criada e configurada, criem pela interface gráfica ou pelo modo texto, para isto basta googlear um pouco.
+
 {% highlight bash %}
-vboxheadless -startvm &quot;NomeDaVM&quot; -e &quot;TCP/Ports=3389&quot;
+vboxheadless -startvm "NomeDaVM" -e "TCP/Ports=3389"
 {% endhighlight %}
-Em TCP/Ports vocês defines a porta a qual se conectarão pelo acesso remoto RDP, para logar tranquilamente e efetuar os testes de condiguração e instalação aconselho deixar a autenticação como Null ou Nula, após a confirmação do funcionamento aconselho deixarem extended ou extendida, mas para isto funcionar deve-se criar um arquivo de configuração com os usuários. Aconselho procurarem na <a href="http://www.virtualbox.org/wiki/Documentation">documentação do VirtualBox</a> como criar autenticação.
+
+Em TCP/Ports vocês defines a porta a qual se conectarão pelo acesso remoto RDP, para logar tranquilamente e efetuar os testes de condiguração e instalação aconselho deixar a autenticação como Null ou Nula, após a confirmação do funcionamento aconselho deixarem extended ou extendida, mas para isto funcionar deve-se criar um arquivo de configuração com os usuários. Aconselho procurarem na [documentação do VirtualBox](http://www.virtualbox.org/wiki/Documentation) como criar autenticação.
+
 Abração galera!

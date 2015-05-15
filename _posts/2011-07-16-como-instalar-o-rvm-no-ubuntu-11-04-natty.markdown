@@ -112,84 +112,117 @@ comments:
     \  ? [...] "
 ---
 E ae galera tudo jóia?
-Agora que sou um "Rubista" posso fazer posts sobre **Ruby**, então vamos ao meu primeiro post relacionado a esta magnífica **linguagem de programação**. Agora só falta eu arranjar um emprego com ruby! ;)
+
+Agora que sou um "Rubista" posso fazer posts sobre **Ruby**, então vamos ao meu primeiro post relacionado a esta magnífica **linguagem de programação**. 
+
 <a href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2011/07/logo.png"><img class="aligncenter size-full wp-image-275" title="RMV - Logo - Ruby" src="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2011/07/logo.png" alt="RMV - Logo - Ruby" width="200" height="200" /></a>
+
 Se você necessita de varias versões do ruby instaladas em sua máquina e gostaria de alterna-las facilmente então seus problemas acabaram, basta utilizar o **RV**M - **Gerenciador de Versões Ruby **.
+
 Vamos lá... Hand's On!
+
 Em primeiro lugar vamos instalar as dependências:
+
 {% highlight bash %}
 sudo apt-get install git git-core curl gcc
 {% endhighlight %}
+
 Agora vamos instalar o RVM
+
 {% highlight bash %}
 cd ~/
 wget https://rvm.beginrescueend.com/install/rvm
 sudo chmod +x rvm
 ./rvm
 {% endhighlight %}
+
 Confira se a instalação adicionou a seguinte linha no arquivo .bashrc, caso não tenha adicionado edite o arquivo .bashrc e coloque no final do mesmo.
+
 {% highlight bash %}
 [[ -s &quot;$HOME/.rvm/scripts/rvm&quot; ]] &amp;&amp; . &quot;$HOME/.rvm/scripts/rvm&quot; # Load RVM function
 {% endhighlight %}
+
 Agora recarregue o bashrc
+
 {% highlight bash %}
 source .bashrc
 {% endhighlight %}
+
 Agora vamos instalar uma dependencia do **RVM** para que o **comando Gem** funcione
+
 {% highlight bash %}
 rvm package install zlib
 {% endhighlight %}
+
 Instale as **versões do Ruby** que vc deseja:
+
 {% highlight bash %}
 rvm install 1.8.7
 rvm install 1.9.2
 {% endhighlight %}
+
 Após a instalação vamos ver se funciona e definir o Ruby 1.9.2 como default:
+
 {% highlight bash %}
 rvm use 1.8.7
 ruby -v
 rvm use 1.9.2 --default
 ruby -v
 {% endhighlight %}
+
 Agora vamos atualizar o Gem:
+
 {% highlight bash %}
 gem -v
 gem update --system
 gem -v
 {% endhighlight %}
+
 Agora vamos criar 3 sets diferentes de Gems para instalar as versões do Rails.
+
 Vamo nessa:
+
 {% highlight bash %}
 rvm gemset create rails2
 rvm gemset create rails3
 rvm gemset create rails3.1
 {% endhighlight %}
+
 Agora vamos listar os Sets de Gems:
+
 {% highlight bash %}
 rvm gemset list
 {% endhighlight %}
+
 O gemset selecionado aparece com um =&gt; na frente, vamos instalar o rails 2 no gemset rails2
+
 {% highlight bash %}
 rvm gemset use rails2
 gem install rails --version=2.3.11
 {% endhighlight %}
+
 Após a instalação veja se está funcional:
+
 {% highlight bash %}
 rails -v
 {% endhighlight %}
+
 Agora vamos instalar o Rails 3:
 {% highlight bash %}
 rvm gemset use rails3
 gem install rails
 rails -v
 {% endhighlight %}
+
 Agora o Rails 3.1:
 {% highlight bash %}
 rvm gemset use rails3.1
 gem install rails --pre
 rails -v
 {% endhighlight %}
+
 Agora para usar a versão de Rails que você quer basta usar o comando rvm gemset use, seguido do gemset criado anteriormente, e rvm use, seguido da versão do Ruby, segue abaixo um teste legal trocando de versão de Ruby e GemSet
+
 {% highlight bash %}
 rvm use 1.8.7
 ruby -v
@@ -198,9 +231,15 @@ ruby -v
 rvm use rails3.1
 rails -v
 {% endhighlight %}
+
 Como um mestre uma vez me disse "Aí é só correr pro abraço e marcar a cervejada!".
+
 Agora poderá trocar de versão do ruby facilmente com o comando **rvm use**.
+
 Enjoy!
-Mais informações visite a pagina de <a href=" https://rvm.beginrescueend.com/rvm/install/">instalação do RVM</a>.
+
+Mais informações visite a pagina de <a href="https://rvm.beginrescueend.com/rvm/install/">instalação do RVM</a>.
+
 *Post atualizado devido ao problema que estava ocorrendo nos paths com o Rails.
+
 Agradeço a ajuda da galera do <a href="https://groups.google.com/group/ruby-sp?hl=pt&amp;pli=1">Grupo Ruby SP</a>.

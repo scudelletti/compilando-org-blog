@@ -28,18 +28,31 @@ tags:
 comments: []
 ---
 E ae galera como estão?
+
 Bom, a uns dias um bugzinho no flash vinha me enchendo o saco aqui no meu ubuntu, resisti bastante até.... ai cachei a solução no Oraculo e aqui estou...
+
 Comandinhos bestas que realmente funcionam.
-<img class="aligncenter size-full wp-image-218" title="adobe-flash" src="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/11/adobe-flash.jpg" alt="" width="300" height="300" />
+
 Bom ai vão eles:
-**sudo mkdir /etc/adobe
+
+{% highlight bash %}
+sudo mkdir /etc/adobe
 sudo su
-sudo echo "OverrideGPUValidation = 1" &gt;&gt; /etc/adobe/mms.cfg**
+sudo echo "OverrideGPUValidation = 1" >> /etc/adobe/mms.cfg
+{% endhighlight %}
+
 Explicando....
+
 Bom no 1º comando criamos uma pasta em /etc com o nome de Adobe.
+
 No segundo é feita uma autenticação como root, acho desnecessario este comando aqui já que usamos Sudo, mas enfim, como copiei, acho melhor deixar ele aqui. ;)
+
 E na ultima linha criamos um arquivo chamado mms.cfg na pasta que criamos e adicionamos o texto "OverrideGPUValidation = 1", deve ser algum parametro cabuloso do Flash ou do Gnome, não sei ao certo. Se alguem souber deixa um comentário pls.
+
 I Love Linux. :D
-**Bom galera é isso, funciona bem e quebra 1 galhão.
-Abraço a todos e até mais.**
-Fonte: <a rel="nofollow" href="http://ubuntuforums.org/showthread.php?p=10072852">Forum Ubuntu</a>
+
+Bom galera é isso, funciona bem e quebra 1 galhão.
+
+Abraço a todos e até mais.
+
+Fonte: [Forum Ubuntu](http://ubuntuforums.org/showthread.php?p=10072852)
