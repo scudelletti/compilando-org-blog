@@ -40,27 +40,37 @@ comments:
   date_gmt: '2014-05-27 02:57:00 -0300'
   content: Me poupou um tempão. Ótimo.
 ---
-<p>Hoje vou mostrar como <strong>descobrir</strong>(verificar) <strong>qual será o próximo valor de um campo auto_increment no MySQL</strong>. Além disso mostrarei <strong>como alterar o auto_increment de uma tabela do MySQL</strong>.</p>
-<p>Percebi que era uma busca recorrente que eu fazia toda vez que precisava e achei melhor colocar isto no blog.</p>
-<p>Como vocês devem saber o <strong>MySQL</strong> possui várias <strong>tabelas de systema</strong>, e utilizaremos uma delas para verificar o próximo número do <strong>auto increment</strong>.<br />
-Para isto acesso seu mysql e execute a seguinte query:<br />
-[code lang="SQL"]<br />
-SELECT<br />
-  AUTO_INCREMENT<br />
-FROM information_schema.tables<br />
-WHERE<br />
-  TABLE_NAME='users' and<br />
-  TABLE_SCHEMA=&quot;compilando&quot;;<br />
-[/code]</p>
-<p>Onde 'users' é o nome da tabela e 'compilando' é o nome do banco de dados.<br />
-Alterando esta query da pra ver algumas informações da tabela 'users', como por exemplo a engine utilizada.</p>
-<p>Agora veremos como alterar este dado.<br />
-[code lang="SQL"]<br />
-ALTER TABLE users AUTO_INCREMENT = 10<br />
-[/code]</p>
-<p>Onde 10 é o próximo valor do auto_increment.</p>
-<p>Agora você pode conferir se deu certo executando a primeira query novamente.<br />
-Eureka! It's works! =]</p>
-<p>Fontes:<br />
-<a target="_blank" rel="nofollow" href="http://www.electrictoolbox.com/reset-auto-increment-value-mysql/" title="http://www.electrictoolbox.com/reset-auto-increment-value-mysql/">http://www.electrictoolbox.com/reset-auto-increment-value-mysql/</a><br />
-<a rel="nofollow" href="http://stackoverflow.com/questions/1405393/finding-the-next-available-id-in-mysql" title="http://stackoverflow.com/questions/1405393/finding-the-next-available-id-in-mysql" target="_blank">http://stackoverflow.com/questions/1405393/finding-the-next-available-id-in-mysql</a></p>
+Hoje vou mostrar como **descobrir**(verificar) **qual será o próximo valor de um campo auto_increment no MySQL**. Além disso mostrarei **como alterar o auto_increment de uma tabela do MySQL**.
+
+Percebi que era uma busca recorrente que eu fazia toda vez que precisava e achei melhor colocar isto no blog.
+
+Como vocês devem saber o **MySQL** possui várias **tabelas de systema**, e utilizaremos uma delas para verificar o próximo número do **auto increment**.
+
+Para isto acesso seu mysql e execute a seguinte query:
+
+{% highlight sql %}
+SELECT
+  AUTO_INCREMENT
+FROM information_schema.tables
+WHERE
+  TABLE_NAME='users' and
+  TABLE_SCHEMA='compilando';
+{% endhighlight %}
+
+Onde 'users' é o nome da tabela e 'compilando' é o nome do banco de dados.
+
+Alterando esta query da pra ver algumas informações da tabela 'users', como por exemplo a engine utilizada.
+
+Agora veremos como alterar este dado.
+
+{% highlight sql %}
+ALTER TABLE users AUTO_INCREMENT = 10
+{% endhighlight %}
+
+Onde 10 é o próximo valor do auto_increment.
+Agora você pode conferir se deu certo executando a primeira query novamente.
+Eureka! It's works! =]
+
+Fontes:
+<a target="_blank" rel="nofollow" href="http://www.electrictoolbox.com/reset-auto-increment-value-mysql/" title="http://www.electrictoolbox.com/reset-auto-increment-value-mysql/">http://www.electrictoolbox.com/reset-auto-increment-value-mysql/</a>
+<a rel="nofollow" href="http://stackoverflow.com/questions/1405393/finding-the-next-available-id-in-mysql" title="http://stackoverflow.com/questions/1405393/finding-the-next-available-id-in-mysql" target="_blank">http://stackoverflow.com/questions/1405393/finding-the-next-available-id-in-mysql</a>

@@ -26,20 +26,28 @@ tags:
 - Ubuntu
 comments: []
 ---
-<p>Está tendo problemas ao atualizar o <strong>Nginx</strong> no ubuntu devido ao erro a seguir?</p>
-<p>Primeiro vamos ver o erro pelo terminal.<br />
-[code lang="shell"]<br />
-sudo apt-get update<br />
-[/code]</p>
-<p>Eis que aparece o erro de <strong>NO_PUBKEY</strong>:<br />
-[code lang="shell"]<br />
-Reading package lists... Done<br />
-W: GPG error: http://nginx.org precise Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY ABF5BD827BD9BF62<br />
-[/code]</p>
-<p>O ubuntu está dizendo que não tem a <strong>assinatura</strong> para a <strong>PUBLIC_KEY</strong> então vamos adicioná-la:<br />
-[code lang="shell"]<br />
-gpg --keyserver keyserver.ubuntu.com --recv-key ABF5BD827BD9BF62<br />
-gpg -a --export ABF5BD827BD9BF62 | sudo apt-key add -<br />
-[/code]</p>
-<p>Lembrando que basta substituir a chave que eu coloquei pela sua. =]</p>
-<p>Seus problemas acabaram! ;)</p>
+Está tendo problemas ao atualizar o **Nginx** no ubuntu devido ao erro a seguir?
+
+Primeiro vamos ver o erro pelo terminal.
+
+{% highlight bash %}
+sudo apt-get update
+{% endhighlight %}
+
+Eis que aparece o erro de **NO_PUBKEY**:
+
+{% highlight bash %}
+Reading package lists... Done
+W: GPG error: http://nginx.org precise Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY ABF5BD827BD9BF62
+{% endhighlight %}
+
+O ubuntu está dizendo que não tem a **assinatura** para a **PUBLIC_KEY** então vamos adicioná-la:
+
+{% highlight bash %}
+gpg --keyserver keyserver.ubuntu.com --recv-key ABF5BD827BD9BF62
+gpg -a --export ABF5BD827BD9BF62 | sudo apt-key add -
+{% endhighlight %}
+
+Lembrando que basta substituir a chave que eu coloquei pela sua. =]
+
+Seus problemas acabaram! ;)

@@ -62,9 +62,9 @@ comments:
   date_gmt: '2014-11-27 13:59:00 -0200'
   content: Obrigado, funcionou perfeitamente.
 ---
-<p>Foi add uma ppa e deu erro? Mais precisamente o erro <strong>Erro: add-apt-repository command not found</strong> ?</p>
-<p>Vamos por a mão na massa, para resolver este problema basta executar o comando abaixo:<br />
-[code lang="shell"]<br />
-apt-get install python-software-properties<br />
-[/code]</p>
-<p>Enjoy. ;)</p>
+Foi add uma ppa e deu erro? Mais precisamente o erro **Erro: add-apt-repository command not found** ?
+Vamos por a mão na massa, para resolver este problema basta executar o comando abaixo:
+{% highlight bash %}
+apt-get install python-software-properties
+{% endhighlight %}
+Enjoy. ;)

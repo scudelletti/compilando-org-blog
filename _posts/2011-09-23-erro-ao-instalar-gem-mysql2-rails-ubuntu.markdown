@@ -49,12 +49,18 @@ comments:
   date_gmt: '2012-10-20 03:41:00 -0300'
   content: valeu manolo, já usei aqui, RoR RULES!!!
 ---
-<p>Toda vez que instalo o rails e vou criar 1 app pra ver se funcionou vejo que esqueci de instalar a gem do mysql.<br />
-Ao tentar instalar a gem me deparo com 1 erro bem grandinho, que infelizmente esqueci de guardar pra colocar no post.</p>
-<p>Então vamos a solução, antes de instalar a gem instale as libs do mysql para Ruby e devs.<br />
-[code lang="shell"]<br />
-sudo apt-get install libmysql-ruby libmysqlclient-dev<br />
-[/code]</p>
-<p>Agora instale a gem e bom divertimento. ;)</p>
-<p>Post Miojo galera, ou seja 3 minutos e tá pronto.<br />
-Enjoy!</p>
+Toda vez que instalo o rails e vou criar 1 app pra ver se funcionou vejo que esqueci de instalar a gem do mysql.
+
+Ao tentar instalar a gem me deparo com 1 erro bem grandinho, que infelizmente esqueci de guardar pra colocar no post.
+
+Então vamos a solução, antes de instalar a gem instale as libs do mysql para Ruby e devs.
+
+{% highlight bash %}
+sudo apt-get install libmysql-ruby libmysqlclient-dev
+{% endhighlight %}
+
+Agora instale a gem e bom divertimento. ;)
+
+Post Miojo galera, ou seja 3 minutos e tá pronto.
+
+Enjoy!

@@ -75,63 +75,86 @@ comments:
   content: nao consegui ver o exemplo se alguem puder me auxiliar ou me add no skype
     para eu tirar algumas duvidas agradeço pois ta foda de achar tuto na net em PT
 ---
-<p><a href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2012/09/logon_google_chrome.png"><img class="aligncenter size-thumbnail wp-image-383" title="logon_google_chrome" src="http://www.compilando.org/wp-content/uploads/2012/09/logon_google_chrome-150x150.png" alt="" width="150" height="150" /></a></p>
-<p>Olá a todos, agora a pouco acabei de desenvolver minha primeira <strong>extesão do Google Chrome</strong>, e nada mais justo que fazer um <strong>tutorial</strong> de <strong>como criar uma extensão simples para Google Chrome com JQuery.</strong></p>
-<p>A extensão que ensino a fazer neste tutorial apenas substitui o body da pagina do compilando.org por um texto.</p>
-<p>Este tutorial segue o princípio "baby steps" então sinta-se a vontade para pular alguns passos caso seja expert. ;)</p>
-<p>O primeiro passo é criar uma pasta</p>
-<p>[code lang="shell"]<br />
-mkdir div_flutuante<br />
-[/code]</p>
-<p>O segundo passo consiste em criar um arquivo chamado manifest.json, este arquivo é responsasvel pode definir as configurações da extenão, nele vc define os imports das páginas, onde a extenção funcionará e coisas do gênero.<br />
-o arquivo deve conter o seguinte conteúdo:</p>
-<p>[code lang="javascript"]<br />
-{<br />
-  &quot;name&quot; : &quot;Div Flutuante&quot;,<br />
-  &quot;version&quot; : &quot;0.1&quot;,<br />
-  &quot;description&quot; : &quot;Apenas um tutorial...&quot;,<br />
-  &quot;content_scripts&quot; : [<br />
-    {<br />
-      &quot;matches&quot; : [<br />
-        &quot;http://compilando.org/*&quot;,<br />
-        &quot;http://www.compilando.org/*&quot;<br />
-      ],<br />
-      &quot;js&quot; : [&quot;jquery-1.8.2.min.js&quot;, &quot;magic.js&quot;],<br />
-      &quot;run_at&quot; : &quot;document_end&quot;<br />
-    }<br />
-  ],<br />
-  &quot;page_action&quot; : {<br />
-    &quot;default_icon&quot; : &quot;icon.png&quot;<br />
-  },<br />
-  &quot;icons&quot; : {<br />
-    &quot;48&quot; : &quot;icon.png&quot;,<br />
-    &quot;128&quot; : &quot;icon.png&quot;<br />
-  },<br />
-  &quot;manifest_version&quot;: 2<br />
-}<br />
-[/code]</p>
-<p>Podemos observar algumas configurações muito bacanas, já incluo o JQuery em content_scripts, e definos os icones, o ícone q está em page_action define o icone que aparecerá ao acessarmos compilando.org, imagem a qual aparecerá na barra de endereços.</p>
-<p>Baixe o JQuery para a pasta.</p>
-<p>[code lang="shell"]<br />
-cd div_flutuante<br />
-wget http://code.jquery.com/jquery-1.8.2.min.js<br />
-[/code]</p>
-<p>Crie o arquivo magic.js o qual importamos no manifest.<br />
-Dentro do magic.js vamos colocar a mágica da extensão.</p>
-<p>[code lang="javascript"]<br />
-$('html').html(&quot;Compilando.org&quot;);<br />
-[/code]</p>
-<p>Agora coloque alguma imagem com o nome icon.png na pasta e pronto.</p>
-<p>Vamos adicionar nossa extensão ao chrome para que possamos ver como ficou.<br />
-Acesse chrome://chrome/extensions/ e clique em Developer Mode ou Modo Desenvolvedor se seu Chrome estiver em português. Após isto clique em Load Unpacked Extension(Carregar extensão descompactada) e selecione a pasta onde esta o manifest.json.</p>
-<p>Agora acesse compilando.org e veja a mágica acontecer. =]<br />
-Este é um tutorial que foge do Hello World normalmente utilizado pois já inclui o JQuery e utiliza as funções que desenvolvemos apenas no dominio que especificamos no arquivo manifest.</p>
-<p>Caso queiram o Hello World Tradicional da Google acesse: <a href="http://developer.chrome.com/extensions/getstarted.html">http://developer.chrome.com/extensions/getstarted.html</a></p>
-<p>O site de Dev da google contem mmuitos exemplos que ajudam bastante, então recomendo uma passeada por lá.<br />
-Caso queiram o código deste tutorial eu o coloquei no GitHub: <a href="https://github.com/scudelletti/tutorial_chrome_extension">https://github.com/scudelletti/tutorial_chrome_extension</a></p>
-<p>Abraços galera.<br />
-E desculpem caso haja algum erro tanto de ortografia quanto de código, já está de madrugada. Muahahahaha ;)</p>
+Olá a todos, agora a pouco acabei de desenvolver minha primeira **extesão do Google Chrome** e nada mais justo que fazer um **tutorial** de **como criar uma extensão simples para Google Chrome com JQuery.**
+
+A extensão que ensino a fazer neste tutorial apenas substitui o body da pagina do compilando.org por um texto.
+
+Este tutorial segue o princípio "baby steps" então sinta-se a vontade para pular alguns passos caso seja expert. ;)
+
+O primeiro passo é criar uma pasta
+
+{% highlight bash %}
+mkdir div_flutuante
+{% endhighlight %}
+
+O segundo passo consiste em criar um arquivo chamado manifest.json, este arquivo é responsasvel pode definir as configurações da extensão, nele vc define os imports das páginas, onde a extenção funcionará e coisas do gênero.
+o arquivo deve conter o seguinte conteúdo:
+
+{% highlight javascript %}
+{
+  "name" : "Div Flutuante",
+  "version" : "0.1",
+  "description" : "Apenas um tutorial...",
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://compilando.org/*",
+        "http://www.compilando.org/*"
+      ],
+      "js" : ["jquery-1.8.2.min.js", "magic.js"],
+      "run_at" : "document_end"
+    }
+  ],
+  "page_action" : {
+    "default_icon" : "icon.png"
+  },
+  "icons" : {
+    "48" : "icon.png",
+    "128" : "icon.png"
+  },
+  "manifest_version": 2
+}
+{% endhighlight %}
+
+Podemos observar algumas configurações muito bacanas, já incluo o JQuery em content_scripts, e definos os icones, o ícone q está em page_action define o icone que aparecerá ao acessarmos compilando.org, imagem a qual aparecerá na barra de endereços.
+
+Baixe o JQuery para a pasta.
+
+{% highlight bash %}
+cd div_flutuante
+wget http://code.jquery.com/jquery-1.8.2.min.js
+{% endhighlight %}
+
+Crie o arquivo magic.js o qual importamos no manifest.
+
+Dentro do magic.js vamos colocar a mágica da extensão.
+
+{% highlight javascript %}
+$('html').html("Compilando.org");
+{% endhighlight %}
+
+Agora coloque alguma imagem com o nome icon.png na pasta e pronto.
+
+Vamos adicionar nossa extensão ao chrome para que possamos ver como ficou.
+
+Acesse chrome://chrome/extensions/ e clique em Developer Mode ou 
+
+Modo Desenvolvedor se seu Chrome estiver em português. Após isto clique em Load Unpacked Extension(Carregar extensão descompactada) e selecione a pasta onde esta o manifest.json.
+
+Agora acesse compilando.org e veja a mágica acontecer. =]
+
+Este é um tutorial que foge do Hello World normalmente utilizado pois já inclui o JQuery e utiliza as funções que desenvolvemos apenas no dominio que especificamos no arquivo manifest.
+
+Caso queiram o Hello World Tradicional da Google acesse: <a href="http://developer.chrome.com/extensions/getstarted.html">http://developer.chrome.com/extensions/getstarted.html</a>
+
+O site de Dev da google contem mmuitos exemplos que ajudam bastante, então recomendo uma passeada por lá.
+
+Caso queiram o código deste tutorial eu o coloquei no GitHub: <a href="https://github.com/scudelletti/tutorial_chrome_extension">https://github.com/scudelletti/tutorial_chrome_extension</a>
+
+Abraços galera.
+
+E desculpem caso haja algum erro tanto de ortografia quanto de código, já está de madrugada. Muahahahaha ;)
 <h2><span style="color: #ff0000;">Ah não esqueçam depois de remover a extensão. Afinal Hello World nao fica em produção não é?</span></h2>
-<p>Fontes de Consulta:<br />
-<a href="http://imasters.com.br/artigo/19377/javascript/criando-extensao-para-google-chrome"> http://imasters.com.br/artigo/19377/javascript/criando-extensao-para-google-chrome</a><br />
-<a href="http://developer.chrome.com/extensions/getstarted.html"> http://developer.chrome.com/extensions/getstarted.html</a></p>
+Fontes de Consulta:
+<a href="http://imasters.com.br/artigo/19377/javascript/criando-extensao-para-google-chrome"> http://imasters.com.br/artigo/19377/javascript/criando-extensao-para-google-chrome</a>
+<a href="http://developer.chrome.com/extensions/getstarted.html"> http://developer.chrome.com/extensions/getstarted.html</a>

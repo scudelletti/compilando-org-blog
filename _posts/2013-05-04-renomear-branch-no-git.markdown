@@ -26,11 +26,15 @@ tags:
 - renomar branch
 comments: []
 ---
-<p>Pessoal post rápido, para <strong>renomear uma branch no git</strong> basta executar.</p>
-<p>[code lang="shell"]<br />
-git branch -m antigo_nome novo_nome<br />
-[/code]</p>
-<p>Onde 'antigo_nome' é o nome atual da <strong>branch</strong> e o 'novo_nome' é o nome que você quer que seja.<br />
-Rápido e prático!</p>
-<p><strong>Git é amor!</strong></p>
-<p>Fonte:<a target="_blank" title="http://ariejan.net/2010/08/09/rename-a-git-branch/" href="http://ariejan.net/2010/08/09/rename-a-git-branch/" rel="nofollow">http://ariejan.net/2010/08/09/rename-a-git-branch/</a></p>
+Pessoal post rápido, para **renomear uma branch no git** basta executar.
+
+{% highlight bash %}
+git branch -m antigo_nome novo_nome
+{% endhighlight %}
+
+Onde `antigo_nome` é o nome atual da **branch** e o `novo_nome` é o nome que você quer que seja.
+
+Rápido e prático!
+**Git é amor!**
+
+Fonte: <a target="_blank" title="http://ariejan.net/2010/08/09/rename-a-git-branch/" href="http://ariejan.net/2010/08/09/rename-a-git-branch/" rel="nofollow">http://ariejan.net/2010/08/09/rename-a-git-branch/</a>

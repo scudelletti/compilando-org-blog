@@ -50,15 +50,21 @@ comments:
   date_gmt: '2014-08-14 20:50:00 -0300'
   content: Valeu
 ---
-<p>Galera, um tempo atrás descobri este <strong>comando</strong> que ajuda a <strong>descobrir a versão do ubuntu</strong>, talvez funcione em outras versões do <strong>linux</strong>, só testei em <strong>Debian</strong> e <strong>Ubuntu</strong></p>
-<p>Basta Executar na <strong>Linha de Comando</strong> vulgo <strong>Shell</strong> o seguinte comando:<br />
-[code lang="shell"]<br />
-lsb_release -a<br />
-[/code]</p>
-<p>A Saída é algo parecido com:<br />
-<strong>No LSB modules are available.<br />
-Distributor ID:	Ubuntu<br />
-Description:	Ubuntu 12.04.1 LTS<br />
-Release:	12.04<br />
-Codename:	precise</strong></p>
-<p>Abraços. ;)</p>
+Galera, um tempo atrás descobri este **comando** que ajuda a **descobrir a versão do ubuntu**, talvez funcione em outras versões do **linux**, só testei em **Debian** e **Ubuntu**
+
+Basta Executar na **Linha de Comando** vulgo **Shell** o seguinte comando:
+
+{% highlight bash %}
+lsb_release -a
+{% endhighlight %}
+
+A Saída é algo parecido com:
+{% highlight bash %}
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 12.04.1 LTS
+Release:	12.04
+Codename:	precise
+{% endhighlight %}
+
+Abraços. ;)

@@ -110,35 +110,35 @@ comments:
     delta==0:\nprint('x¹ e x² =',-b/(2*a))\n\n\telif delta&lt;0:\nprint(&#039;Nenhuma
     raiz Real&#039;)"
 ---
-<p>E ae galerinha tudo jóia?<br />
-Faz um tempão que não atualizo o blog, mas no backend ando sempre brincando um pouco por aqui.</p>
-<p>Desde que aprendi a programar eu sempre tive vontade de fazer um <strong>algoritmo</strong> que resolvesse equações de segundo grau. Tinha começado em VB6 que foi minha primeira <strong>linguagem de programação</strong>, mas não me recordo se terminei ou onde foi parar aquilo.</p>
-<p>Sei que provavelmente utilizei mto a cabeça pq eu era mais newbie que o batman.<br />
-Agora jah consigo brincar facinho com esses dilemas da matemática usando php, java e <strong>python</strong>, claro que sempre procurando as funções certas, não sou <strong>desenvolvedor Python</strong> ainda, mas acho um linguagem interessantíssima, junto ao Ruby.</p>
-<p>Pra quem não lembra uma <strong>expressão de 2º grau</strong> é parecida com esta 5x² -7x +1.</p>
-<p>5 representa A<br />
--7 representa B<br />
-1 Representa C</p>
-<p>Bom vamos ao código.</p>
-<p>[code lang="python"]<br />
-import math</p>
-<p>a = input(&quot;Insira o Valor de A &quot;)<br />
-b = input(&quot;Insira o Valor de B &quot;)<br />
-c = input(&quot;Insira o Valor de C &quot;)<br />
-x = []</p>
-<p>delta = b**2 - 4*a*c<br />
-x.insert(1, ((-b + math.sqrt(delta))/(2*a)))<br />
-x.insert(2, ((-b - math.sqrt(delta))/(2*a)))</p>
-<p>print &quot;Delta = &quot;+str(delta)+&quot;n&quot;</p>
-<p>if delta&gt;0:<br />
-        print &quot;x1=&quot;+str(x[0])+&quot;&quot;<br />
-        print &quot;x2=&quot;+str(x[1])+&quot;&quot;<br />
-elif delta==0:<br />
-        print &quot;x=&quot;+str(x[0])+&quot;nx1 e x2 possuem o mesmo valor&quot;<br />
-else:<br />
-        print &quot;Nenhuma raiz Real&quot;</p>
-<p>[/code]</p>
-<p>O código acima obtem A, B e C do usuário e retorna o Delta e os Valor de x1 e x2.<br />
-Bom galera código extremamente simples, porém deu pra <strong>brincar com Python</strong>, sofri um pouquinho com a criação do vetor, que na verdade é uma lista. Achei sinistro, mas o resto foi sussa.</p>
-<p>Agora seu sobrinho, filho  ou visinho no ensino fundamental já tem como validar suas <strong>equações de segundo grau</strong>,  bom pra ficar foderoso em matemática.</p>
-<p>Boa Sorte e Enjoy.</p>
+E ae galerinha tudo jóia?
+Faz um tempão que não atualizo o blog, mas no backend ando sempre brincando um pouco por aqui.
+Desde que aprendi a programar eu sempre tive vontade de fazer um **algoritmo** que resolvesse equações de segundo grau. Tinha começado em VB6 que foi minha primeira **linguagem de programação**, mas não me recordo se terminei ou onde foi parar aquilo.
+Sei que provavelmente utilizei mto a cabeça pq eu era mais newbie que o batman.
+Agora jah consigo brincar facinho com esses dilemas da matemática usando php, java e **python**, claro que sempre procurando as funções certas, não sou **desenvolvedor Python** ainda, mas acho um linguagem interessantíssima, junto ao Ruby.
+Pra quem não lembra uma **expressão de 2º grau** é parecida com esta 5x² -7x +1.
+5 representa A
+-7 representa B
+1 Representa C
+Bom vamos ao código.
+{% highlight python %}
+import math
+a = input(&quot;Insira o Valor de A &quot;)
+b = input(&quot;Insira o Valor de B &quot;)
+c = input(&quot;Insira o Valor de C &quot;)
+x = []
+delta = b**2 - 4*a*c
+x.insert(1, ((-b + math.sqrt(delta))/(2*a)))
+x.insert(2, ((-b - math.sqrt(delta))/(2*a)))
+print &quot;Delta = &quot;+str(delta)+&quot;n&quot;
+if delta&gt;0:
+        print &quot;x1=&quot;+str(x[0])+&quot;&quot;
+        print &quot;x2=&quot;+str(x[1])+&quot;&quot;
+elif delta==0:
+        print &quot;x=&quot;+str(x[0])+&quot;nx1 e x2 possuem o mesmo valor&quot;
+else:
+        print &quot;Nenhuma raiz Real&quot;
+{% endhighlight %}
+O código acima obtem A, B e C do usuário e retorna o Delta e os Valor de x1 e x2.
+Bom galera código extremamente simples, porém deu pra **brincar com Python**, sofri um pouquinho com a criação do vetor, que na verdade é uma lista. Achei sinistro, mas o resto foi sussa.
+Agora seu sobrinho, filho  ou visinho no ensino fundamental já tem como validar suas **equações de segundo grau**,  bom pra ficar foderoso em matemática.
+Boa Sorte e Enjoy.

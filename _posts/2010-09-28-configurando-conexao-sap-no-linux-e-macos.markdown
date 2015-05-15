@@ -89,25 +89,25 @@ comments:
     Vlw amigo.
     Boa sorte. ;)
 ---
-<p>Ae galera tudo jóia?<br />
-Graças ao Rafa to com o <strong>SAPGui no Ubuntu</strong>. :-D</p>
-<p>Bom pra evitar dor de cabeça pra vcs vou ensinar <strong>como logar no SAP</strong> e como entender a <strong>String de conexão do SAP<br />
-</strong><br />
-Abra o SAPGui e clique em New.<br />
-<a href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/SAP.png"><img class="aligncenter size-full wp-image-102" title="Tela Inicial" src="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/SAP.png" alt="" width="388" height="273" /></a></p>
-<p style="text-align: auto;">Vá para a aba Advanced.<br />
-<a href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/SAP2.png"><img class="aligncenter size-full wp-image-103" title="Nova Conexão SAP" src="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/SAP2.png" alt="" width="535" height="348" /></a></p>
-<p>Selecione Expert Mode.</p>
-<p>Coloque essa String lah dentro:<br />
-conn=/H/ip.da.maquina/S/32##</p>
-<p>Você deve substituir o ## pelo System Number da conexão, o ip.da.maquina pelao Ip ou dominio do servidor a ser conectado.</p>
-<p><img class="aligncenter size-full wp-image-104" title="String de Conexão SAP" src="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/SAP3.png" alt="" width="537" height="345" /></p>
-<p>Salva e clica em Connect.<br />
-Provavelmente jah vai funfar de boa.</p>
-<p>Existem alguns parâmetros interessantes para alterar esta scring de conexão, da pra selecionar o client, o usuario e a senha além da linguagem.</p>
-<p>Se algue souber o que significa o 32, o H e o S posta nos comentários que adiciono a este tuto básico.<br />
-Acho que H é de Host mas é mera suposição.</p>
-<p>Tutorial testado em MacOs e Ubuntu.</p>
-<p>Bom galera espero ter ajudado aos amantes dos SO's Não-Windows.<br />
-E agradeço novamente o Rafa sem ele eu estaria googleando ateh agora pra achar o <strong>SAP versão Linux</strong>.<br />
-Vlw irmão. :-)</p>
+Ae galera tudo jóia?
+Graças ao Rafa to com o **SAPGui no Ubuntu**. :-D
+Bom pra evitar dor de cabeça pra vcs vou ensinar **como logar no SAP** e como entender a **String de conexão do SAP
+**
+Abra o SAPGui e clique em New.
+<a href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/SAP.png"><img class="aligncenter size-full wp-image-102" title="Tela Inicial" src="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/SAP.png" alt="" width="388" height="273" /></a>
+<p style="text-align: auto;">Vá para a aba Advanced.
+<a href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/SAP2.png"><img class="aligncenter size-full wp-image-103" title="Nova Conexão SAP" src="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/SAP2.png" alt="" width="535" height="348" /></a>
+Selecione Expert Mode.
+Coloque essa String lah dentro:
+conn=/H/ip.da.maquina/S/32##
+Você deve substituir o ## pelo System Number da conexão, o ip.da.maquina pelao Ip ou dominio do servidor a ser conectado.
+<img class="aligncenter size-full wp-image-104" title="String de Conexão SAP" src="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/SAP3.png" alt="" width="537" height="345" />
+Salva e clica em Connect.
+Provavelmente jah vai funfar de boa.
+Existem alguns parâmetros interessantes para alterar esta scring de conexão, da pra selecionar o client, o usuario e a senha além da linguagem.
+Se algue souber o que significa o 32, o H e o S posta nos comentários que adiciono a este tuto básico.
+Acho que H é de Host mas é mera suposição.
+Tutorial testado em MacOs e Ubuntu.
+Bom galera espero ter ajudado aos amantes dos SO's Não-Windows.
+E agradeço novamente o Rafa sem ele eu estaria googleando ateh agora pra achar o **SAP versão Linux**.
+Vlw irmão. :-)

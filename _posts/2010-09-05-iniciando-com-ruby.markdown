@@ -40,44 +40,44 @@ comments:
 
     Vlw ae Rafa, Ruby realmente é intuitivo.
 ---
-<p>Neste primeiro artigo da nossa sessão, vamos quebrar o gelo e aprender a escrever os primeiros trechos de código Ruby.</p>
-<p>[caption id="attachment_67" align="aligncenter" width="300" caption="IRB - Interactive Ruby Shell"]<a rel="nofollow" href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/LoveRuby.png"><img class="size-medium wp-image-67" title="LoveRuby" src="http://www.compilando.org/wp-content/uploads/2010/09/LoveRuby-300x293.png" alt="Love Ruby" width="300" height="293" /></a></dt>
+Neste primeiro artigo da nossa sessão, vamos quebrar o gelo e aprender a escrever os primeiros trechos de código Ruby.
+[caption id="attachment_67" align="aligncenter" width="300" caption="IRB - Interactive Ruby Shell"]<a rel="nofollow" href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/LoveRuby.png"><img class="size-medium wp-image-67" title="LoveRuby" src="http://www.compilando.org/wp-content/uploads/2010/09/LoveRuby-300x293.png" alt="Love Ruby" width="300" height="293" /></a></dt>
 </dl>
 </div>
-<p><strong>Ok, mas o que eu preciso para começar?<br />
-</strong> Primeiro instale o Ruby em sua máquina, <a rel="nofollow" href="http://www.ruby-lang.org/pt/downloads/">neste link</a> você terá o passo a passo para Windows, Linux e Mac.<br />
-Após a instalação vamos usar o IRB (Interactive Ruby Shell), acesse seu console e digite <strong>irb</strong> você estará dentro do ambiente dinâmico do interpretador Ruby.</p>
+**Ok, mas o que eu preciso para começar?
+** Primeiro instale o Ruby em sua máquina, <a rel="nofollow" href="http://www.ruby-lang.org/pt/downloads/">neste link</a> você terá o passo a passo para Windows, Linux e Mac.
+Após a instalação vamos usar o IRB (Interactive Ruby Shell), acesse seu console e digite **irb** você estará dentro do ambiente dinâmico do interpretador Ruby.
 <div class="mceTemp mceIEcenter">
 <dl id="attachment_68" class="wp-caption aligncenter" style="width: 310px;">
-<dt class="wp-caption-dt"><a  rel="nofollow" href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-15.21.12.png"><img class="size-medium wp-image-68" title="IRB" src="http://www.compilando.org/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-15.21.12-300x74.png" alt="Interactive Ruby Shell" width="300" height="74" /></a>[/caption]</p>
-<p><strong>Hello World em Ruby?<br />
-</strong>Não poderíamos deixar de começar com o famoso Hello World!<br />
-Não se intimide, no terminal digite <strong>“Hello Wolrd!!!” <span style="font-weight: normal;">e pressione ENTER,</span><br />
-=&gt; </strong>demonstra o que foi retornado.<strong> </strong></p>
-<p><strong> </strong></p>
-<p><strong> </strong></p>
-<p>[caption id="attachment_69" align="aligncenter" width="300" caption="Hello World Ruby"]<a rel="nofollow"  href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-15.54.26.png"><img class="size-medium wp-image-69" title="Hello World Ruby" src="http://www.compilando.org/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-15.54.26-300x91.png" alt="Hello World Ruby" width="300" height="91" /></a>[/caption]</p>
-<p><strong><span style="font-weight: normal;"><strong>Operações aritméticas<br />
-</strong>Ruby compreende todos os operadores aritméticos básicos:<br />
-+ = adição<br />
-- = subtração<br />
-* = multiplicação<br />
-/ = divisão<br />
-</span></strong><strong><span style="font-weight: normal;"><br />
-Como em calculadora, digite </span>3 + 4 </strong>e pressione ENTER</p>
-<p>[caption id="attachment_70" align="aligncenter" width="300" caption="Somando com Ruby"]<a rel="nofollow"  href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-15.59.06.png"><img class="size-medium wp-image-70" title="Soma com Ruby" src="http://www.compilando.org/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-15.59.06-300x82.png" alt="Somando com Ruby" width="300" height="82" /></a>[/caption]</p>
-<p>Testem as demais operações, seguindo o mesmo conceito.</p>
-<p><strong>Métodos Ruby</strong><br />
-Agora vamos brincar com alguns <strong>métodos</strong> disponíveis no <strong>Ruby<span style="font-weight: normal;">.</span></strong><br />
-Como faríamos para retornar uma <strong>string inversa</strong>?<br />
-Quantas linhas precisamos codificar?</p>
-<p>[caption id="attachment_71" align="aligncenter" width="300" caption="Imprimindo String Reversa com Ruby"]<a  rel="nofollow" href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-16.06.38.png"><img class="size-medium wp-image-71" title="Imprimindo String Reversa com Ruby" src="http://www.compilando.org/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-16.06.38-300x83.png" alt="Reverse String Ruby" width="300" height="83" /></a>[/caption]</p>
-<p>Simples assim: <strong>“Rafael”.reverse<br />
-</strong><br />
-E se eu quisesse <strong>contar</strong> quantas letras a <strong>string</strong> possui?</p>
-<p>[caption id="attachment_73" align="aligncenter" width="300" caption="Contar String com Ruby"]<a  rel="nofollow" href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-16.09.521.png"><img class="size-medium wp-image-73" title="Contar String com Ruby" src="http://www.compilando.org/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-16.09.521-300x77.png" alt="Contar String com Ruby (length)" width="300" height="77" /></a>[/caption]</p>
-<p><strong>“Rafael”.length</strong><br />
-Utilizamos o método .length para contar quantas letras possui a string.</p>
-<p>Viu como é fácil?<br />
-Este foi nosso pontapé inicial, enviem comentários com dúvidas, críticas e sugestões, daremos continuidade no próximo artigo.</p>
-<p>Atividade Sempre!</p>
+<dt class="wp-caption-dt"><a  rel="nofollow" href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-15.21.12.png"><img class="size-medium wp-image-68" title="IRB" src="http://www.compilando.org/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-15.21.12-300x74.png" alt="Interactive Ruby Shell" width="300" height="74" /></a>[/caption]
+**Hello World em Ruby?
+**Não poderíamos deixar de começar com o famoso Hello World!
+Não se intimide, no terminal digite **“Hello Wolrd!!!” <span style="font-weight: normal;">e pressione ENTER,</span>
+=&gt; **demonstra o que foi retornado.** **
+** **
+** **
+[caption id="attachment_69" align="aligncenter" width="300" caption="Hello World Ruby"]<a rel="nofollow"  href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-15.54.26.png"><img class="size-medium wp-image-69" title="Hello World Ruby" src="http://www.compilando.org/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-15.54.26-300x91.png" alt="Hello World Ruby" width="300" height="91" /></a>[/caption]
+**<span style="font-weight: normal;">**Operações aritméticas
+**Ruby compreende todos os operadores aritméticos básicos:
++ = adição
+- = subtração
+* = multiplicação
+/ = divisão
+</span>****<span style="font-weight: normal;">
+Como em calculadora, digite </span>3 + 4 **e pressione ENTER
+[caption id="attachment_70" align="aligncenter" width="300" caption="Somando com Ruby"]<a rel="nofollow"  href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-15.59.06.png"><img class="size-medium wp-image-70" title="Soma com Ruby" src="http://www.compilando.org/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-15.59.06-300x82.png" alt="Somando com Ruby" width="300" height="82" /></a>[/caption]
+Testem as demais operações, seguindo o mesmo conceito.
+**Métodos Ruby**
+Agora vamos brincar com alguns **métodos** disponíveis no **Ruby<span style="font-weight: normal;">.</span>**
+Como faríamos para retornar uma **string inversa**?
+Quantas linhas precisamos codificar?
+[caption id="attachment_71" align="aligncenter" width="300" caption="Imprimindo String Reversa com Ruby"]<a  rel="nofollow" href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-16.06.38.png"><img class="size-medium wp-image-71" title="Imprimindo String Reversa com Ruby" src="http://www.compilando.org/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-16.06.38-300x83.png" alt="Reverse String Ruby" width="300" height="83" /></a>[/caption]
+Simples assim: **“Rafael”.reverse
+**
+E se eu quisesse **contar** quantas letras a **string** possui?
+[caption id="attachment_73" align="aligncenter" width="300" caption="Contar String com Ruby"]<a  rel="nofollow" href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-16.09.521.png"><img class="size-medium wp-image-73" title="Contar String com Ruby" src="http://www.compilando.org/wp-content/uploads/2010/09/Captura-de-tela-2010-09-05-às-16.09.521-300x77.png" alt="Contar String com Ruby (length)" width="300" height="77" /></a>[/caption]
+**“Rafael”.length**
+Utilizamos o método .length para contar quantas letras possui a string.
+Viu como é fácil?
+Este foi nosso pontapé inicial, enviem comentários com dúvidas, críticas e sugestões, daremos continuidade no próximo artigo.
+Atividade Sempre!

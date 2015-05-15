@@ -24,13 +24,19 @@ tags:
 - processo
 comments: []
 ---
-<p>Estava precisando de um <strong>comando</strong> para listar qual <strong>processo</strong> estava ocupando a porta 4000 de meu PC, deu uma googleada e eis que me vem a solução... fuser... a utilização dele é bem fácil e retorna até o <strong>PID do processo</strong>...</p>
-<p>Seus problemas acabaram, <strong>Saiba qual processo utiliza determinada porta no Linux</strong>!</p>
-<p>[code lang="shell"]<br />
-fuser -v 4000/tcp<br />
-[/code]</p>
-<p>Onde 4000 é a porta e TCP é o protocolo.</p>
-<p>Antigamente eu utilizava <strong>Netstat</strong> para fazer isso... agora ficou bem mais simples...<br />
-Bom é isso.</p>
-<p>Enjoy!</p>
-<p>Fonte de Consulta: <a rel="nofollow" href="http://www.vivaolinux.com.br/dica/fuser-Descobrindo-o-processo-que-uma-determinada-porta-esta-utilizando">Viva O Linux</a></p>
+Estava precisando de um **comando** para listar qual **processo** estava ocupando a porta 4000 de meu PC, deu uma googleada e eis que me vem a solução... fuser... a utilização dele é bem fácil e retorna até o **PID do processo**...
+
+Seus problemas acabaram, **Saiba qual processo utiliza determinada porta no Linux**!
+
+{% highlight bash %}
+fuser -v 4000/tcp
+{% endhighlight %}
+
+Onde 4000 é a porta e TCP é o protocolo.
+Antigamente eu utilizava **Netstat** para fazer isso... agora ficou bem mais simples...
+
+Bom é isso.
+
+Enjoy!
+
+Fonte de Consulta: <a rel="nofollow" href="http://www.vivaolinux.com.br/dica/fuser-Descobrindo-o-processo-que-uma-determinada-porta-esta-utilizando">Viva O Linux</a>

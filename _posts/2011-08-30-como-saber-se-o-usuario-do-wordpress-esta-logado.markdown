@@ -31,39 +31,46 @@ comments:
   date_gmt: '2012-03-20 18:02:00 -0300'
   content: post muito fera! usei e funciono blz!
 ---
-<p>Bom dia galera tudo jóia?</p>
-<p>Eis um post rápido de como saber se um usuário está autenticado no wordpress, para isto basta usar esta função.<br />
-[code lang="php"]<br />
-&lt;?php<br />
-     if ( !$user_ID ){<br />
-          //Seu Código<br />
-     }<br />
-?&gt;<br />
-[/code]</p>
-<p>Muito útil para fazer aparecer o formulário de login.<br />
-Segue o código que utilizo para fazer login:<br />
-[code lang="php"]<br />
-&lt;?php if ( !$user_ID ){ ?&gt;<br />
-				&lt;form method=&quot;post&quot; action=&quot;http://localhost/site</p>
-<p>/wp-login.php&quot; id=&quot;loginform&quot; name=&quot;loginform&quot;&gt;<br />
-					&lt;p&gt;<br />
-						&lt;label&gt;Nome de usu&amp;aacute;rio&lt;br&gt;<br />
-						&lt;input type=&quot;text&quot; tabindex=&quot;10&quot; size=&quot;20&quot; value=&quot;&quot; class=&quot;input&quot; id=&quot;user_login&quot; name=&quot;log&quot;&gt;&lt;/label&gt;<br />
-					&lt;/p&gt;<br />
-					&lt;p&gt;<br />
-						&lt;label&gt;Senha&lt;br&gt;<br />
-						&lt;input type=&quot;password&quot; tabindex=&quot;20&quot; size=&quot;20&quot; value=&quot;&quot; class=&quot;input&quot; id=&quot;user_pass&quot; name=&quot;pwd&quot;&gt;&lt;/label&gt;<br />
-					&lt;/p&gt;<br />
-					&lt;p class=&quot;forgetmenot&quot;&gt;&lt;label&gt;&lt;input type=&quot;checkbox&quot; tabindex=&quot;90&quot; value=&quot;forever&quot; id=&quot;rememberme&quot; name=&quot;rememberme&quot;&gt; Lembrar&lt;/label&gt;&lt;/p&gt;<br />
-					&lt;p class=&quot;submit&quot;&gt;<br />
-						&lt;input type=&quot;submit&quot; tabindex=&quot;100&quot; value=&quot;Login&quot; class=&quot;button-primary&quot; id=&quot;wp-submit&quot; name=&quot;wp-submit&quot;&gt;<br />
-						&lt;input type=&quot;hidden&quot; value=&quot;http://localhost/site/&quot; name=&quot;redirect_to&quot;&gt;<br />
-						&lt;input type=&quot;hidden&quot; value=&quot;1&quot; name=&quot;testcookie&quot;&gt;<br />
-					&lt;/p&gt;<br />
-				&lt;/form&gt;<br />
-			&lt;?php }else{ ?&gt;<br />
-		&lt;a href='&lt;?php echo wp_logout_url( home_url() ); ?&gt;' title=&quot;Logout&quot;&gt;Logout&lt;/a&gt;<br />
-	&lt;?php }	?&gt;<br />
-[/code]</p>
-<p>Enjoy!!!<br />
-Go Go Make Code!!!</p>
+Bom dia galera tudo jóia?
+
+Eis um post rápido de como saber se um usuário está autenticado no wordpress, para isto basta usar esta função.
+
+{% highlight php %}
+<?php
+     if ( !$user_ID ){
+          //Seu Código
+     }
+?>
+{% endhighlight %}
+
+Muito útil para fazer aparecer o formulário de login.
+
+Segue o código que utilizo para fazer login:
+
+{% highlight php %}
+<?php if ( !$user_ID ){ ?>
+				<form method="post" action="http://localhost/site
+/wp-login.php" id="loginform" name="loginform">
+					<p>
+						<label>Nome de usu&amp;aacute;rio<br>
+						<input type="text" tabindex="10" size="20" value=" class="input" id="user_login" name="log"></label>
+					</p>
+					<p>
+						<label>Senha<br>
+						<input type="password" tabindex="20" size="20" value=" class="input" id="user_pass" name="pwd"></label>
+					</p>
+					<p class="forgetmenot"><label><input type="checkbox" tabindex="90" value="forever" id="rememberme" name="rememberme"> Lembrar</label></p>
+					<p class="submit">
+						<input type="submit" tabindex="100" value="Login" class="button-primary" id="wp-submit" name="wp-submit">
+						<input type="hidden" value="http://localhost/site/" name="redirect_to">
+						<input type="hidden" value="1" name="testcookie">
+					</p>
+				</form>
+			<?php }else{ ?>
+		<a href='<?php echo wp_logout_url( home_url() ); ?>' title="Logout">Logout</a>
+	<?php }	?>
+{% endhighlight %}
+
+Enjoy!!!
+
+Go Go Make Code!!!

@@ -26,16 +26,22 @@ tags:
 - Ubuntu
 comments: []
 ---
-<p>Post rápido galera!<br />
-Hoje estava checando <strong>content-types</strong> de um <strong>formulário de upload</strong> e descobri como descobrir o <strong>Content Type pela Shell Linux</strong>! Funfou legal aqui no meu <strong>Ubuntu</strong>!</p>
-<p>Super fácil pessoal vamos ao comando:<br />
-[code lang="shell"]<br />
-file -i arquivo<br />
-[/code]</p>
-<p>Vamos a um exemplo prático:<br />
-[code lang="shell"]<br />
-file -i sample.pdf<br />
-[/code]</p>
-<p>O Resultado retornado foi:<br />
-<strong>sample.pdf: application/pdf; charset=binary</strong></p>
-<p>Eureka! It's Works! ;)</p>
+Post rápido galera!
+
+Hoje estava checando **content-types** de um **formulário de upload** e descobri como descobrir o **Content Type pela Shell Linux**! Funfou legal aqui no meu **Ubuntu**!
+
+Super fácil pessoal vamos ao comando:
+{% highlight bash %}
+file -i arquivo
+{% endhighlight %}
+
+Vamos a um exemplo prático:
+
+{% highlight bash %}
+file -i sample.pdf
+{% endhighlight %}
+
+O Resultado retornado foi:
+**sample.pdf: application/pdf; charset=binary**
+
+Eureka! It's Works! ;)

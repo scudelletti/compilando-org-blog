@@ -85,29 +85,38 @@ comments:
   date_gmt: '2015-01-22 00:27:00 -0200'
   content: Perfeito!
 ---
-<p>E ae galera tudo jóia?</p>
-<p>O meu post anterior possui uma solução para buscar dados que possuem acentos e trazer os dados que tem e não tem acentos, melhoramos a solução e além de ficar mais simples ainda faz a busca ignorar os acentos.</p>
-<p><a href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2011/11/mysql1.png"><img class="aligncenter size-full wp-image-325" title="" src="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2011/11/mysql1.png" alt="" width="491" height="497" /></a></p>
-<p>Se eu quero pesquisar por 'diário', ele me retorna 'diario' e 'diário', e se eu procuro 'diario', ele me retorna 'diário' e 'diario', e sem o problema mencionado no post anterior.</p>
-<p>Bacana né? Então vamos a query!</p>
-<p>[code lang="sql"]<br />
-select nome from jornais where nome like _utf8 '%diario%' COLLATE utf8_unicode_ci;<br />
-[/code]</p>
-<p>Resultado</p>
-<p>[code lang="sql"]<br />
-mysql&gt; select nome from jornais where nome like _utf8 '%diario%' COLLATE utf8_unicode_ci;<br />
-+-------------------------------+<br />
-| empresa                       |<br />
-+-------------------------------+<br />
-| Diário do Grande ABC          |<br />
-| Baguete Diario Ltda           |<br />
-| Jornal Diário do Litoral      |<br />
-+-------------------------------+<br />
-3 rows in set (0.04 sec)<br />
-[/code]</p>
-<p>Vale ressaltar que a busca seguinte também trás os mesmos resultados.<br />
-[code lang="sql"]<br />
-select nome from jornais where nome like _utf8 '%diário%' COLLATE utf8_unicode_ci;<br />
-[/code]</p>
-<p>Enjoy!<br />
-Fonte: <a href="http://dadomingues.blogspot.com/2008/10/select-ignorando-acento.html">http://dadomingues.blogspot.com/2008/10/select-ignorando-acento.html</a></p>
+E ae galera tudo jóia?
+
+O meu post anterior possui uma solução para buscar dados que possuem acentos e trazer os dados que tem e não tem acentos, melhoramos a solução e além de ficar mais simples ainda faz a busca ignorar os acentos.
+
+Se eu quero pesquisar por 'diário', ele me retorna 'diario' e 'diário', e se eu procuro 'diario', ele me retorna 'diário' e 'diario', e sem o problema mencionado no post anterior.
+
+Bacana né? Então vamos a query!
+
+{% highlight sql %}
+select nome from jornais where nome like _utf8 '%diario%' COLLATE utf8_unicode_ci;
+{% endhighlight %}
+
+Resultado
+
+{% highlight sql %}
+mysql> select nome from jornais where nome like _utf8 '%diario%' COLLATE utf8_unicode_ci;
++-------------------------------+
+| empresa                       |
++-------------------------------+
+| Diário do Grande ABC          |
+| Baguete Diario Ltda           |
+| Jornal Diário do Litoral      |
++-------------------------------+
+3 rows in set (0.04 sec)
+{% endhighlight %}
+
+Vale ressaltar que a busca seguinte também trás os mesmos resultados.
+
+{% highlight sql %}
+select nome from jornais where nome like _utf8 '%diário%' COLLATE utf8_unicode_ci;
+{% endhighlight %}
+
+Enjoy!
+
+Fonte: <a href="http://dadomingues.blogspot.com/2008/10/select-ignorando-acento.html">http://dadomingues.blogspot.com/2008/10/select-ignorando-acento.html</a>

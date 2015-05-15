@@ -34,9 +34,9 @@ comments:
   date_gmt: '2012-05-16 06:41:00 -0300'
   content: Também não conhecia.Obrigado pela dica.
 ---
-<p>E ae galera tudo jóia?</p>
-<p>Fiquei muito feliz de saber que a edição deste mês da <strong>Revista Programar</strong> trata como assunto de capa <strong>Ruby on Rails</strong>.<br />
-Então galera aconselho baixarem e lerem, afinal é uma das melhores <strong>revistas de programação</strong> que conheço, e melhor totalmente <strong>gratuita</strong>.</p>
-<p><a href="http://www.portugal-a-programar.org/revista-programar/edicoes/download.php?e=30&t=site"><img src="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2011/08/ed30.jpg" alt="" title="Revista Programar - Edição de Agosto - Introdução ao Rails" width="247" height="349" class="aligncenter size-full wp-image-295" /></a></p>
-<p><a href="http://www.portugal-a-programar.org/revista-programar/edicoes/download.php?e=30&t=site" title="Revista Programar - Edição de Agosto">Revista Programar - Edição de Agosto</a><br />
-Enjoy.</p>
+E ae galera tudo jóia?
+Fiquei muito feliz de saber que a edição deste mês da **Revista Programar** trata como assunto de capa **Ruby on Rails**.
+Então galera aconselho baixarem e lerem, afinal é uma das melhores **revistas de programação** que conheço, e melhor totalmente **gratuita**.
+<a href="http://www.portugal-a-programar.org/revista-programar/edicoes/download.php?e=30&t=site"><img src="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2011/08/ed30.jpg" alt="" title="Revista Programar - Edição de Agosto - Introdução ao Rails" width="247" height="349" class="aligncenter size-full wp-image-295" /></a>
+<a href="http://www.portugal-a-programar.org/revista-programar/edicoes/download.php?e=30&t=site" title="Revista Programar - Edição de Agosto">Revista Programar - Edição de Agosto</a>
+Enjoy.
