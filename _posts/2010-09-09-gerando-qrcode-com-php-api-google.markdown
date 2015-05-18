@@ -71,40 +71,52 @@ comments:
   content: |-
     Se você estiver usando o cakephp para extrair os dados de uma base use esse comando no plugin
 
-    $this-&gt;QrCode-&gt;text($NomeController['NomeTabela']['Coluna']);
+    $this->QrCode-&gt;text($NomeController['NomeTabela']['Coluna']);
 ---
-<p style="text-align: left;">Neste post ensinarei **como utilizar a API do Google** para **gerar QrCode** através do **PHP**.
-<img class="aligncenter" style="border: 0px initial initial;" src="http://i206.photobucket.com/albums/bb289/Mandrake__/chart.png" alt="QrCode PHP, API Google Chart" width="200" height="200" />
+
+Neste post ensinarei **como utilizar a API do Google** para **gerar QrCode** através do **PHP**.
+
+![image](/assets/qrcode.png)
+
 Vocês verão que é muito simples pois a parte dificil a google topou fazer. ;-)
-Este post é muito basico, aconselho a conhecer melhor a **<a href="http://code.google.com/intl/pt-BR/apis/chart/docs/gallery/qr_codes.html">API para gerar QrCode</a>**, pois a mesma possui alguns parametros que lhe podem ser interessantes.
+
+Este post é muito básico, aconselho a conhecer melhor a **[API para gerar QrCode](http://code.google.com/intl/pt-BR/apis/chart/docs/gallery/qr_codes.html)**, pois a mesma possui alguns parametros que podem ser interessantes.
+
 Para entender bem como funciona a API criei um formulário em HTML e através dele passarei as informações para a página qrCode.php.
+
 {% highlight html %}
-&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-	&lt;head&gt;
-		&lt;title&gt;Title of the document&lt;/title&gt;
-	&lt;/head&gt;
-	&lt;body&gt;
-		&lt;form name=&quot;formulario&quot; action=&quot;qrCode.php&quot; method=&quot;post&quot; &gt;
-			&lt;label for=&quot;texto&quot;&gt;Texto ou Link:&lt;/label&gt;&lt;br/&gt;
-			&lt;textarea name=&quot;texto&quot; id=&quot;texto&quot; rows=&quot;5&quot; cols=&quot;40&quot;&gt;&lt;/textarea&gt;&lt;br/&gt;
-			&lt;label for=&quot;tamanho&quot;&gt;Tamanho:&lt;/label&gt;&lt;br/&gt;
-			&lt;input type=&quot;text&quot; name=&quot;tamanho&quot; id=&quot;tamanho&quot; value=&quot;100&quot;/&gt;&lt;br/&gt;
-			&lt;input type=&quot;submit&quot; value=&quot;Gerar QrCode&quot;/&gt;
-		&lt;/form&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Title of the document</title>
+  </head>
+  <body>
+    <form name="formulario" action="qrCode.php" method="post" >
+      <label for="texto">Texto ou Link:</label><br/>
+      <textarea name="texto" id="texto" rows="5" cols="40"></textarea><br/>
+      <label for="tamanho">Tamanho:</label><br/>
+      <input type="text" name="tamanho" id="tamanho" value="100"/><br/>
+      <input type="submit" value="Gerar QrCode"/>
+    </form>
+</body>
+</html>
 {% endhighlight %}
-Agora criaremos a página qrCode.php que repassará e retornara os dados da **<a href="http://code.google.com/intl/pt-BR/apis/chart/docs/gallery/qr_codes.html">aka Chart API da Google</a>**.
+
+Agora criaremos a página qrCode.php que repassará e retornara os dados da **[aka Chart API da Google](http://code.google.com/intl/pt-BR/apis/chart/docs/gallery/qr_codes.html)**.
+
 {% highlight php %}
-&lt;?php
-	if(isset($_POST['texto']) &amp;&amp; isset($_POST['tamanho'])){
-		$link = 'http://chart.apis.google.com/chart?cht=qr&amp;chl='.$_POST['texto'].'&amp;chs='.$_POST[tamanho].'x'.$_POST[tamanho];
-		echo &quot;&lt;img src='$link'/&gt;&quot;;
-	}
-?&gt;
+<?php
+  if(isset($_POST['texto']) && isset($_POST['tamanho'])){
+    $link = 'http://chart.apis.google.com/chart?cht=qr&chl='.$_POST['texto'].'&chs='.$_POST[tamanho].'x'.$_POST[tamanho];
+    echo "<img src='$link'/>";
+  }
+?>
 {% endhighlight %}
+
 Eita jah acabou né? Puts achei que ia fazer um artigo grandão pra impressionar muita gente mas me ferrei.  :-)
-Brincadeiras a parte, a google realmente facilitou e muito o **desenvolvimento de QrCode**, aconselho uma consulta a base de <a href="http://code.google.com/">códigos e API's da Google</a>, garanto que tem muita coisa útil lá.
-Para criação deste post consultei um tutorial do<a href="	http://imasters.uol.com.br/artigo/11752/aplicativosmoveis/gerar_qr_code_atraves_de_api_do_google/"> </a><a href="	http://imasters.uol.com.br/artigo/11752/aplicativosmoveis/gerar_qr_code_atraves_de_api_do_google/">Paulo Silva na IMaster</a><a href="	http://imasters.uol.com.br/artigo/11752/aplicativosmoveis/gerar_qr_code_atraves_de_api_do_google/">s</a>.
+
+Brincadeiras a parte, a google realmente facilitou e muito o **desenvolvimento de QrCode**, aconselho uma consulta a base de [códigos e API's da Google](http://code.google.com), garanto que tem muita coisa útil lá.
+
+Para criação deste post consultei um tutorial do [Paulo Silva na iMasters](http://imasters.com.br/artigo/11752/aplicativosmoveis/gerar_qr_code_atraves_de_api_do_google/).
+
 Abraço a todos e bom desenvolvimento.

@@ -133,17 +133,19 @@ a = input("Insira o Valor de A ")
 b = input("Insira o Valor de B ")
 c = input("Insira o Valor de C ")
 x = []
+
 delta = b**2 - 4*a*c
 x.insert(1, ((-b + math.sqrt(delta))/(2*a)))
 x.insert(2, ((-b - math.sqrt(delta))/(2*a)))
 print "Delta = "+str(delta)+"n"
+
 if delta>0:
-        print "x1="+str(x[0])+"
-        print "x2="+str(x[1])+"
+  print "x1="+str(x[0])+"
+  print "x2="+str(x[1])+"
 elif delta==0:
-        print "x="+str(x[0])+"nx1 e x2 possuem o mesmo valor"
+  print "x="+str(x[0])+"nx1 e x2 possuem o mesmo valor"
 else:
-        print "Nenhuma raiz Real"
+  print "Nenhuma raiz Real"
 {% endhighlight %}
 
 O código acima obtem A, B e C do usuário e retorna o Delta e os Valor de x1 e x2.
