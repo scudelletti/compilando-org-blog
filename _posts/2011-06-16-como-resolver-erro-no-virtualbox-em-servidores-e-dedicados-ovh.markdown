@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Como resolver erro no VirtualBox em Servidores e Dedicados OVH
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

@@ -5,7 +5,7 @@ published: true
 title: Instalando o Java da Oracle / Sun - Com Plugin Chrome e Firefox - Internet
   Banking
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

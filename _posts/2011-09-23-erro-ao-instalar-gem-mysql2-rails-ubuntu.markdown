@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Erro ao instalar Gem mysql2 Rails - Ubuntu
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

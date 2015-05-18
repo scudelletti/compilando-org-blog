@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Como saber qual processo está utilizando determinada porta no Linux
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Como criar um .gitignore Global independente de projeto
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

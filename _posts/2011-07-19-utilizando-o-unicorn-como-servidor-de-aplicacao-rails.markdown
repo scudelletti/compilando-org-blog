@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Utilizando o Unicorn como Servidor de Aplicação Rails
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

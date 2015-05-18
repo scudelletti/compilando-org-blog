@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Como instalar o NX Server no Ubuntu Natty 11.04 - FreeNX Server
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

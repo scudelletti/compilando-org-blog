@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Como saber se o Usuário do Wordpress está logado
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

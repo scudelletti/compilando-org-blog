@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Atualização do Nginx no Ubuntu - GPG error public key is not available
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

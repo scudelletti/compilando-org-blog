@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Equação de Segundo Grau em Python - Bhaskara
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

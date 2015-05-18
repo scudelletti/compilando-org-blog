@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Utorrent com WebUI no Linux Ubuntu Natty 11.04
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

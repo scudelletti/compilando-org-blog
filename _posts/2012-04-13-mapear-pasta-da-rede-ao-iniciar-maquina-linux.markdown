@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Mapear Pasta da Rede ao Iniciar Máquina Linux
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

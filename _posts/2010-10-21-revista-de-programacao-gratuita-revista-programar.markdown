@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Revista de Programação Gratuita - Revista Programar
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

@@ -5,7 +5,7 @@ published: true
 title: Comando para descobrir a versão do Ubuntu, Debian e Talvez outras Distribuições
   Linux
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

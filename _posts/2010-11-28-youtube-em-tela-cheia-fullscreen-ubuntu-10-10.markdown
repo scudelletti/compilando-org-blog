@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Youtube em Tela Cheia - Fullscreen Ubuntu 10.10
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

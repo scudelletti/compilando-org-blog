@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Como criar uma Extensão do Google Chrome com JQuery
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Git Colorido no Terminal
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

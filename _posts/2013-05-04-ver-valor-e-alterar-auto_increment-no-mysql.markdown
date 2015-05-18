@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Ver Valor e Alterar auto_increment no MySQL
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

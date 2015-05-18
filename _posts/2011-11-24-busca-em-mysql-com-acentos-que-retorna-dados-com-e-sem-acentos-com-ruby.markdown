@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Busca em MySQL com acentos que retorna dados com e sem acentos com Ruby
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

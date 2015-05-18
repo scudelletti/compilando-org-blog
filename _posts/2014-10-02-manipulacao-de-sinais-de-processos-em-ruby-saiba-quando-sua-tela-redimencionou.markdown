@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Manipulação de Sinais de Processos em Ruby - Saiba quando sua tela foi redimencionada
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

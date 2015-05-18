@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Como descobrir o Content Type pela Shell Linux
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

@@ -4,7 +4,7 @@ status: publish
 published: true
 title: 'Resolva o erro: add-apt-repository command not found no Ubuntu Natty 11.04'
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

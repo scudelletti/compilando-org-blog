@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Gerando QRCode com PHP + API Google
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

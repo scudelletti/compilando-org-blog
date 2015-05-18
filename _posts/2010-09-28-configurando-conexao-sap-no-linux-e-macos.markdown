@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Configurando Conexão SAP no Linux e MacOS
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

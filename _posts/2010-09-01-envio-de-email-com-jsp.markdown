@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Envio de email com JSP
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''

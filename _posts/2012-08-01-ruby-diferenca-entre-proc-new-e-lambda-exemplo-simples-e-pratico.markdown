@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Ruby - Diferença entre Proc.new e Lambda - Exemplo Simples e Prático
 author:
-  display_name: Mandrake
+  display_name: Scudelletti
   login: Mandrake
   email: cadastro@scudelletti.com
   url: ''
