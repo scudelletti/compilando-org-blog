@@ -1,4 +1,4 @@
-FROM ruby:2.4.0
+FROM ruby:2.4.0 as builder
 
 WORKDIR /build
 COPY ./ .
@@ -6,6 +6,6 @@ COPY ./ .
 RUN bundle install
 RUN bundle exec jekyll build
 
-FROM nginx
+FROM nginx:alpine
 
-COPY --from=0 /build/_site /usr/share/nginx/html
+COPY --from=builder /build/_site /usr/share/nginx/html
