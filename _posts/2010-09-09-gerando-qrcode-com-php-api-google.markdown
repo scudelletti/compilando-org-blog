@@ -16,7 +16,7 @@ wordpress_url: http://www.compilando.org/wp/?p=84
 date: '2010-09-09 13:24:26 -0300'
 date_gmt: '2010-09-09 16:24:26 -0300'
 categories:
-- Programação
+- Programacao
 - PHP
 tags:
 - api google

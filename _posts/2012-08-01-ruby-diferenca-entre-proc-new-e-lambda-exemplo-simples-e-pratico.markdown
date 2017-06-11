@@ -15,7 +15,7 @@ wordpress_url: http://www.compilando.org/wp/?p=370
 date: '2012-08-01 17:19:11 -0300'
 date_gmt: '2012-08-01 20:19:11 -0300'
 categories:
-- Programação
+- Programacao
 - Ruby
 tags:
 - diferença entre lambda e proc
@@ -49,7 +49,7 @@ puts metodo_proc   # print "retorno de dentro do Proc.new dentro do metodo_proc"
 puts metodo_lambda # print "retorno do metodo_lambda"
 {% endhighlight %}
 
-Galera achei outra informação bacana na diferença de Procs e Lambdas no How to Code, Lambdas lançam **"ArgumentError: wrong number of arguments"**, caso não seja passada a quantidade certa de parametros, já o Proc não, ele atribui nil como default para os parametros restantes. 
+Galera achei outra informação bacana na diferença de Procs e Lambdas no How to Code, Lambdas lançam **"ArgumentError: wrong number of arguments"**, caso não seja passada a quantidade certa de parametros, já o Proc não, ele atribui nil como default para os parametros restantes.
 
 Isso para Ruby 1.9+ no 1.8.7 ambos retornam esta exception. =]
 

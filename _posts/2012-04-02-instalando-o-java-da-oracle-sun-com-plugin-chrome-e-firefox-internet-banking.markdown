@@ -18,7 +18,7 @@ date_gmt: '2012-04-02 14:06:41 -0300'
 categories:
 - Linux
 - Outros
-- Programação
+- Programacao
 - Java
 tags:
 - java
@@ -28,7 +28,7 @@ comments: []
 ---
 Vamos aprender como instalar o o Java da Oracle (antigo vulgo Java da Sun :-)).
 
-Antes de mais nada recomendo desistalar o OpenJDK, para isto basta acessar este <a href="/linux/programação/java/2012/04/02/como-remover-o-openjdk-do-ubuntu-11-10.html" target="_blank">Post</a>.
+Antes de mais nada recomendo desistalar o OpenJDK, para isto basta acessar este [post](/linux/programacao/java/2012/04/02/como-remover-o-openjdk-do-ubuntu-11-10.html).
 
 Instalaremos o Java da Oracle, através de seus binários.
 

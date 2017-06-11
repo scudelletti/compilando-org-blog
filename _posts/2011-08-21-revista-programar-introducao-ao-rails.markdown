@@ -15,7 +15,7 @@ wordpress_url: http://www.compilando.org/wp/?p=294
 date: '2011-08-21 16:21:14 -0300'
 date_gmt: '2011-08-21 19:21:14 -0300'
 categories:
-- Programação
+- Programacao
 - Ruby
 tags: []
 comments:

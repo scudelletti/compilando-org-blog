@@ -16,7 +16,7 @@ date: '2012-09-30 01:45:46 -0300'
 date_gmt: '2012-09-30 04:45:46 -0300'
 categories:
 - Linux
-- Programação
+- Programacao
 - JavaScript
 tags:
 - criar extensão chrome
@@ -137,7 +137,7 @@ Agora coloque alguma imagem com o nome icon.png na pasta e pronto.
 
 Vamos adicionar nossa extensão ao chrome para que possamos ver como ficou.
 
-Acesse chrome://chrome/extensions/ e clique em Developer Mode ou 
+Acesse chrome://chrome/extensions/ e clique em Developer Mode ou
 
 Modo Desenvolvedor se seu Chrome estiver em português. Após isto clique em Load Unpacked Extension(Carregar extensão descompactada) e selecione a pasta onde esta o manifest.json.
 

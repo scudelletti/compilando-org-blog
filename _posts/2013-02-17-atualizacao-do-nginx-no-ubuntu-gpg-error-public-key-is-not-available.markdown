@@ -17,7 +17,7 @@ date_gmt: '2013-02-17 04:40:53 -0300'
 categories:
 - Linux
 - Outros
-- Programação
+- Programacao
 tags:
 - apt-get
 - GPG error

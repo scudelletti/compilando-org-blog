@@ -17,7 +17,7 @@ date_gmt: '2011-09-23 15:07:07 -0300'
 categories:
 - Git
 - Linux
-- Programação
+- Programacao
 tags:
 - git
 - git colorido

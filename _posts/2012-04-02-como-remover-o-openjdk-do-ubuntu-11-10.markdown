@@ -16,7 +16,7 @@ date: '2012-04-02 10:57:39 -0300'
 date_gmt: '2012-04-02 13:57:39 -0300'
 categories:
 - Linux
-- Programação
+- Programacao
 - Java
 tags:
 - java

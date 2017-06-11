@@ -15,10 +15,10 @@ wordpress_url: http://www.compilando.org/wp/?p=154
 date: '2010-10-21 10:30:12 -0200'
 date_gmt: '2010-10-21 13:30:12 -0200'
 categories:
-- Programação
+- Programacao
 tags:
 - desenvolvimento
-- Programação
+- Programacao
 - Revista Programar
 comments:
 - id: 17

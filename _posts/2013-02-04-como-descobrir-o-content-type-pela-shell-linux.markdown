@@ -16,7 +16,7 @@ date: '2013-02-04 11:43:47 -0200'
 date_gmt: '2013-02-04 14:43:47 -0200'
 categories:
 - Linux
-- Programação
+- Programacao
 tags:
 - console
 - content-type

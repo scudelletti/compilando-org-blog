@@ -17,7 +17,7 @@ wordpress_url: http://www.compilando.org/wp/?p=228
 date: '2011-02-16 18:00:23 -0200'
 date_gmt: '2011-02-16 21:00:23 -0200'
 categories:
-- Programação
+- Programacao
 - Python
 tags:
 - Brincando com Python
@@ -150,7 +150,7 @@ else:
 
 O código acima obtem A, B e C do usuário e retorna o Delta e os Valor de x1 e x2.
 
-Bom galera código extremamente simples, porém deu pra **brincar com Python**, sofri um pouquinho com a criação do vetor, que na verdade é uma lista. 
+Bom galera código extremamente simples, porém deu pra **brincar com Python**, sofri um pouquinho com a criação do vetor, que na verdade é uma lista.
 
 Achei sinistro, mas o resto foi sussa.
 

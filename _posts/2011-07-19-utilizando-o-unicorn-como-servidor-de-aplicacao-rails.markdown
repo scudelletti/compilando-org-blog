@@ -16,7 +16,7 @@ date: '2011-07-19 13:41:12 -0300'
 date_gmt: '2011-07-19 16:41:12 -0300'
 categories:
 - Linux
-- Programação
+- Programacao
 - Ruby
 tags:
 - deploy

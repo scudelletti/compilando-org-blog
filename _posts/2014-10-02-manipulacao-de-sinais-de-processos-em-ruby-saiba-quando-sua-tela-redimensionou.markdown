@@ -16,7 +16,7 @@ date: '2014-10-02 11:36:10 -0300'
 date_gmt: '2014-10-02 14:36:10 -0300'
 categories:
 - Linux
-- Programação
+- Programacao
 - Ruby
 tags:
 - Ruby

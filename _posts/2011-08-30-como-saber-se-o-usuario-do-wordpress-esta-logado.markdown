@@ -15,7 +15,7 @@ wordpress_url: http://www.compilando.org/wp/?p=300
 date: '2011-08-30 10:48:49 -0300'
 date_gmt: '2011-08-30 13:48:49 -0300'
 categories:
-- Programação
+- Programacao
 - PHP
 tags:
 - usuário logado wordpress

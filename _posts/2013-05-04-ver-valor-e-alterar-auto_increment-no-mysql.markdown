@@ -16,7 +16,7 @@ date: '2013-05-04 11:09:53 -0300'
 date_gmt: '2013-05-04 14:09:53 -0300'
 categories:
 - Linux
-- Programação
+- Programacao
 - MySQL
 tags:
 - alterar auto_increment

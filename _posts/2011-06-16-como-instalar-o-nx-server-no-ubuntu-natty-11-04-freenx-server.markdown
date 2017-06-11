@@ -36,7 +36,7 @@ sudo add-apt-repository ppa:freenx-team
 sudo sed -i 's/natty/lucid/g' /etc/apt/sources.list.d/freenx-team-ppa-natty.list
 {% endhighlight %}
 
-Caso dê o erro de Command not Found [leia este artigo](http://www.compilando.org/wp/sem-categoria/resolva-o-erro-add-apt-repository-command-not-found-no-ubuntu-natty-11-04).
+Caso dê o erro de Command not Found [leia este artigo](/linux/2011/06/17/resolva-o-erro-add-apt-repository-command-not-found-no-ubuntu-natty-11-04.html).
 
 Agora vamos atualizar a lista do apt-get e **instalar o nx server**
 

@@ -35,7 +35,7 @@ comments:
 ---
 **<span style="color: #ff0000;">Este post já foi superado, porém o conteúdo dele é extremamente útil.</span>**
 
-Para ver uma solução mais flexível, mais fácil e de melhor funcionamento acesse este [post](/outros/programação/mysql/2011/11/28/busca-sql-ignorando-acentuacao-mysql.html).
+Para ver uma solução mais flexível, mais fácil e de melhor funcionamento acesse este [post](/outros/programacao/mysql/2011/11/28/busca-sql-ignorando-acentuacao-mysql.html).
 
 E ae galera tudo bom com vcs?
 Ontem tive uma task na qual era necessário buscar dados com e sem acentos quando a pessoa digitava com **acentos**, fiquei quebrando a cabeça quando um companheiro de Trabalho teve uma idéia que achei genial e muito bem sacada.

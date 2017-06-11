@@ -16,7 +16,7 @@ date: '2011-07-16 21:06:04 -0300'
 date_gmt: '2011-07-17 00:06:04 -0300'
 categories:
 - Linux
-- Programação
+- Programacao
 - Ruby
 tags:
 - deploy
@@ -113,11 +113,9 @@ comments:
 ---
 E ae galera tudo jóia?
 
-Agora que sou um "Rubista" posso fazer posts sobre **Ruby**, então vamos ao meu primeiro post relacionado a esta magnífica **linguagem de programação**. 
+Agora que sou um "Rubista" posso fazer posts sobre **Ruby**, então vamos ao meu primeiro post relacionado a esta magnífica **linguagem de programação**.
 
-<a href="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2011/07/logo.png"><img class="aligncenter size-full wp-image-275" title="RMV - Logo - Ruby" src="http://blog-scudelletti.rhcloud.com/wp-content/uploads/2011/07/logo.png" alt="RMV - Logo - Ruby" width="200" height="200" /></a>
-
-Se você necessita de varias versões do ruby instaladas em sua máquina e gostaria de alterna-las facilmente então seus problemas acabaram, basta utilizar o **RV**M - **Gerenciador de Versões Ruby **.
+Se você necessita de varias versões do ruby instaladas em sua máquina e gostaria de alterna-las facilmente então seus problemas acabaram, basta utilizar o **RVM** - **Gerenciador de Versões Ruby **.
 
 Vamos lá... Hand's On!
 

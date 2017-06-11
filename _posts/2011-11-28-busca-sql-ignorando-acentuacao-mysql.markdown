@@ -16,7 +16,7 @@ date: '2011-11-28 09:36:34 -0200'
 date_gmt: '2011-11-28 12:36:34 -0200'
 categories:
 - Outros
-- Programação
+- Programacao
 - MySQL
 tags:
 - acentuação no MySQL

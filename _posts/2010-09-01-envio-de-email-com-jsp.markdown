@@ -15,7 +15,7 @@ wordpress_url: http://www.compilando.org/wp/?p=29
 date: '2010-09-01 12:33:15 -0300'
 date_gmt: '2010-09-01 15:33:15 -0300'
 categories:
-- Programação
+- Programacao
 - HTML
 - Java
 - Java EE
@@ -74,7 +74,7 @@ try{
   email.addCc("Com Copia"); //Para adicionar mais copias basta copiar varias vezes esta linha sempre trocando o "Com Copia" pelo endereco e recebimento
   email.setTLS(false);
   email.setHtmlMsg("<html><head></head><body><h1>Título</h1><h2>Subtítulo</h2><p>Texto Aqui</p><img src='http://www.google.com.br/intl/en_com/images/srpr/logo1w.png' alt='alternativo'/><p>Mais Texto</p></body></html>"); //Aqui eh definido o email no formato HTML
-  email.setTextMsg("Your email client does not support HTML messages"); //Esta mensagem aparece caso o email de recebimento nao suporte HTML 
+  email.setTextMsg("Your email client does not support HTML messages"); //Esta mensagem aparece caso o email de recebimento nao suporte HTML
   email.send();  //Envia a mensagem
   out.println("FIM");
   email = null;

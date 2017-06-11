@@ -15,7 +15,7 @@ wordpress_url: http://www.compilando.org/wp/?p=250
 date: '2011-06-16 22:22:22 -0300'
 date_gmt: '2011-06-17 01:22:22 -0300'
 categories:
-- Sem categoria
+- Linux
 tags: []
 comments:
 - id: 25

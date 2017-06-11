@@ -17,7 +17,7 @@ date_gmt: '2013-05-04 13:59:07 -0300'
 categories:
 - Git
 - Outros
-- Programação
+- Programacao
 - Sistemas
 tags:
 - ".gitignore"
