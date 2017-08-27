@@ -1,4 +1,4 @@
-FROM ruby:2.4.0 as builder
+FROM ruby:2.4.1 as builder
 
 WORKDIR /build
 COPY ./ .
